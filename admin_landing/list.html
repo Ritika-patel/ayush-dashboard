@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush hospital</title>
+    <!-- FONT AWSEOME -->
+    <script src="https://kit.fontawesome.com/e4253b1e09.js" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    
+
+<body>
+    <section class="admin_landing">
+        <div class="topnav">
+            <div class="l">
+                <a class="NavIcon" href="#">
+                    <image class="NavImg" src="../assets/ayush_hospital.png">
+                </a>
+                <!-- <a href=""><b></b></a> -->
+            </div>
+            <div class="r">
+                <a href="">
+                    <div class="profileArea">
+                        <image class="profileImage" src="../assets/default_profile.jpg" />
+                        <div>Profile</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section class="hospital_details">
+            <table id="customers">
+                <tr>
+                    <th>
+                        <div class="filter">
+                            <div>Filter</div>
+                            <div><i class="fa fa-filter"></i></div>
+                        </div>
+                    <th>
+                        <!-- <label for="state-type">Select State</label> -->
+                        <select class="drpDwn" name="state-type">
+                            <option value="">Kerela</option>
+                            <option value="">Madhya Pradesh</option>
+                            <option value="">Andhra Pradesh</option>
+                            <option value="">Arunachal Pradesh</option>
+                            <option value="">Assam</option>
+                            <option value="">Bihar</option>
+                            <option value="">Chhattisgarh</option>
+                            <option value="">Gujarat</option>
+                            <option value="">Haryana - Chandigarh</option>
+                            <option value="">Himachal Pradesh</option>
+                            <option value="">Jharkhand</option>
+                            <option value="">Karnataka</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Manipur</option>
+                            <option value="">Meghalaya</option>
+                            <option value="">Mizoram</option>
+                            <option value="">Nagaland</option>
+                            <option value="">Odisha</option>
+                            <option value="">Punjab</option>
+                            <option value="">Rajasthan</option>
+                            <option value="">Sikkim</option>
+                            <option value="">Tamil Nadu</option>
+                            <option value="">Telangana</option>
+                            <option value="">Tripura</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Uttarakhand</option>
+                            <option value="">West Bengal</option>
+                            <option value="">Andaman and Nicobar Island</option>
+                            <option value="">Chandigarh</option>
+                            <option value="">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="">Delhi</option>
+                            <option value="">Ladakh</option>
+                            <option value="">Lakshadweep</option>
+                            <option value="">Jammu and Kashmir</option>
+                            <option value="">Puducherry</option>
+                        </select>
+                    </th>
+
+                    <th>
+                        <!-- <label for="validation">Validation</label> -->
+                        <select class="drpDwn" name="validation">
+                            <option value="">validated</option>
+                            <option value="">not Validated</option>
+                        </select>
+                    </th>
+                    <th>
+                        <button class="detailbtn">Show Deleted</button>
+                    </th>
+                    <th>
+
+                        <div class="search-container">
+                            <input type="text" placeholder="Search By Name" name="search">
+                            <button class="detailbtn">
+                                <!-- <image src="./assets/magnifier.png"> -->
+                                    search
+                            </button>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="temp">
+                <div>List of Hospitals <br>
+                (6 results found) </div>
+                <div class="page">
+                    <label class="rpp" for="">Result per page</label>
+                    <select  name="">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">40</option>
+                        <option value="">50</option>
+                    </select>
+                </div>
+            </div>
+
+
+                <section id="hospital1" class="ListOFAllHospitals">
+                    <div class="ayush">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                        Kottakal Arya Vaidya Sala
+                                    </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Near Bharath Matha College,
+                                        Thrikkakkara (P.O.),
+                                        Kochi – 682 021</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>9:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>9:00pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>13DK83DNU8O</th>
+                                </tr>
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input checked type="checkbox" name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayush">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                        pva ayurvedic multi-speciality hospital                                </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Kattampally, Kerala 670015</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>8:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>9:00pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>FSYB673485HD</th>
+                                </tr>
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input checked type="checkbox" name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayushii">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                        Vaidyaratnam Oushadhasala                                </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Veeyan Towers, MKK Nair Rd, Palarivattom, Kochi, Kerala</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>9:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>9:00pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>13DYNDT4648</th>
+                                </tr>
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input type="checkbox" checked name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayush">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                        PVA AyurvedicMulti-speciality Hospital
+                                    </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Kattampally, Kannur, Kerela</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>9:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>6:30pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>95GTHXK2687</th>
+                                </tr>
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input type="checkbox"checked name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayush">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                    </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Nadu Palayakamkottai, Tirnuveli, 627002</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>9:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>6:30pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>9F47NDUNDIW98</th>
+                                </tr>
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input type="checkbox" checked name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ayushii">
+                        <div class="ayuleft">
+                            <table>
+                                <tr class="">
+                                    <div class="name">
+                                        Amala Ayurvedic Hospital and Research  Center                             </div>
+                                </tr>
+                                <tr class="address">
+                                    <th>Address: </th>
+                                    <th>Amalanagar, Trissur, Kerela</th>
+                                </tr>
+                                <tr class="hospital_type">
+                                    <th>Hospital-Type: </th>
+                                    <th>Ayurveda</th>
+                                </tr>
+                        
+                                <tr class="opening_time">
+                                    <th>Opening Time:</th>
+                                    <th>9:00am</th>
+                                </tr>
+                                <tr class="closing_time">
+                                    <th>Closing Time:</th>
+                                    <th>9:00pm</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="ayuright">
+                            <table>
+                                <tr>
+                                    <th>Hospital id:</th>
+                                    <th>7R8DNKD6487</th>
+                                </tr>
+
+                                <tr>
+                                    <th>Validated</th>
+                                    <th><input checked type="checkbox" name="" id=""></th>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="FaIcons">
+                                <div id="view_kottakal" class="view_details"><a href="../details/details.html"><i class="fa-solid fa-eye fa-lg"></i> </a></div>
+                                <div  class="edit_details"><a href="../hospital_landing/create.html"><i class="fa-solid fa-pen fa-lg"></i></a></div>
+                                <div id+="del1" class="delete_details"><i class="fa-solid fa-trash-can fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </section>
+    <!--JAVASCRIPT-->
+    <script src=".script.js"></script>
+</body>
+
+</html>
+
+

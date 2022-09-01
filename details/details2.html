@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush hospital</title>
+    <!-- FONT AWSEOME -->
+    <script src="https://kit.fontawesome.com/e4253b1e09.js" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <style>
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+} 
+
+.button {
+  /* font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out; */
+  /* text-align: center;
+    background-color: #0F203C;
+    color: white;
+    padding: 0.4rem 0.4rem;
+    border-radius:5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9; */
+    width: auto;
+  color: white;
+  width: 200px;
+  padding: 12px;
+  background-color: #0F203C;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin:10px;
+  resize: vertical;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.containerr{
+  background-color: white;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.ff{
+  margin-top:200px;
+  background-color: white;
+  width:50%;
+  padding:20px;
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.edit_del_btn{
+  margin-top:2px;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+    </style>
+
+<body>
+    <section class="admin_landing">
+        <div class="topnav">
+            <div class="l">
+                <a class="NavIcon" href="../Login_Register/login.html">
+                    <image class="NavImg" src="../assets/ayush_hospital.png">
+                </a>
+
+            </div>
+            <div class="r">
+                <a href="">
+                    <div class="profileArea">
+                        <image class="profileImage" src="../assets/default_profile.jpg" />
+                        <div>Profile</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section>
+<br>
+            <section class="Hospital_Admin_page">
+                <div class="left_Admin">
+                    <div class="ayush_image">
+                        <image class="ayush_i" src="../assets/ayush icon.png"></image>
+                    </div>
+                    <h3 style=" text-align: center; font-size:35px; ">Kottakal Arya Vaidya Sala</h3>
+                    <div class="contact">
+                        <table>
+
+
+                             <tr>
+                                <td>IPD:</td>
+                                <td>2</td>
+                             </tr>
+
+                             <tr>
+                                <td>OPD:</td>
+                                <td>12</td>
+                             </tr>
+
+                             <tr>
+                                <td>Registrations:</td>
+                                <td>12</td>
+                             </tr>
+
+                             <tr>
+                                <td>Email:</td>
+                                <td>ekmbr@aryavaidyasala.com</td>
+                             </tr>
+                             
+                             <tr>
+                                <td>Phone:</td>
+                                <td>+91 484 - 2375674 </td>
+                             </tr>
+ 
+                             <tr>
+                                 <td>Website:</td>
+                                 <td>https://www.aryavaidyasala.com  </td>
+                              </tr>
+
+                         </table>
+                    </div>
+                </div>
+                <div class="right_Admin">
+                    <div class="ayush_image">
+                        <image class="ayush_h" src="../assets/ayush_hospital.png"></image>
+                    </div>
+                    <div class="ra">
+                        <table>
+                            <tr>
+                                <td>Hospital id:</td>
+                                <td>1232AS52323</td>
+                            </tr>
+                            <tr>
+                              <th>Latitude</th>
+                              <th>1.3223223223</th>
+                          </tr>
+
+                          <tr>
+                              <th>Longitude</th>
+                              <th>1.85684884867</th>
+                          </tr>
+                            <tr>
+                                <td>Validation Status:</td>
+                                <td>Valid</td>
+                            </tr>
+                            <tr class="">
+                                <td>Deletion Status:</td>
+                                <td>True</td>
+                            </tr>
+                            <tr class="address">
+                                <td>Address: </td>
+                                <td>Kottakkal Arya Vaidya Sala
+                                    Ernakulam Branch <br> Clinic and Pharmacy
+                                    M.G Road, Ernakulam - 682016</td>
+                            </tr>
+
+                            <tr class="address">
+                                <td>State: </td>
+                                <td>Ernakulam</td>
+                            </tr>
+                            <tr class="address">
+                                <td>City: </td>
+                                <td>Ernakulam, Kerala</td>
+                            </tr>
+                            <tr class="hospital_type">
+                                <td>Hospital-Type: </td>
+                                <td>Ayurveda</td>
+                            </tr>
+                    
+                            <tr class="opening_time">
+                                <td>Opening Time:</td>
+                                <td>9:00am</td>
+                            </tr>
+                            <tr class="closing_time">
+                                <td>Closing Time:</td>
+                                <td>9:00pm</td>
+                            </tr>
+                            <tr class="">
+                                <td>Beds available</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="">
+                                <td>Total Beds</td>
+                                <td>10</td>
+                            </tr>
+                            <tr class="">
+                                <td>Speacialization</td>
+                                <td>DHARA,NAVARAKIZHI,PIZHICHIL,
+                                    <br>
+                                    SIROVASTI,PIZHICHIL,
+                                    <br>THARPANAM,NASYAM,
+                                    THARPANAM</td>
+                            </tr>
+                            <tr class="">
+                                <td>Facilities</td>
+                                <td>PanchKarma</td>
+                            </tr>
+    
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            
+
+            <!-- <div class="edit_del_btn"> -->
+
+              <div id="popup1" class="overlay">
+              
+                <form class="ff" action="">
+                  <div style="float:right"><a href="../details/details.html"><i class="fa-solid fa-xmark"></i></a></div>
+                  <label for="">Beds available</label>
+                  <input type="text">
+
+                  <label for="">Total Beds</label>
+                  <input type="text">
+
+                  <label for="">IPD</label>
+                  <input type="text">
+
+                  <label for="">OPD</label>
+                  <input type="text">
+
+                  <a style="text-decoration: none;" href="../details/details.html"><input class="submit_btn" type="button" value="Submit" style="margin: auto; padding: auto; width:100%; margin-top:10px"></a>
+                </form>
+              </div>
+              <div class="edit_del_btn">
+                <a style="text-decoration: none; padding:auto; box-sizing: border-box; border-radius: 1px solid #0F203C" class="button" href="#popup1">Edit Demographic Data</a>
+                <!-- <a href="../model.html"><button>Edit Demographic Data</button></a> -->
+                <a href="../hospital_landing/create.html"><button>Edit</button></a>
+                <a href="../Login_Register/Register.html"><button>Delete</button></a>
+            </div>
+    </section>
+    <!--JAVASCRIPT-->
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+

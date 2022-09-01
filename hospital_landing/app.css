@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+  --primary-color: #FFF5D4;
+  --secondry-color: #0F203C;
+}
+
+/* .x1{
+    width:80%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 3px solid var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding:15px;
+    border-radius: 10px;
+} */
+
+.border-md {
+    border-width: 2px;
+}
+
+.btn-facebook {
+    background: var(--primary-color);
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background:var(--primary-color);
+}
+
+.btn-twitter {
+    background:var(--primary-color);
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background:var(--primary-color);
+}
+
+
+.form-control,
+.drp_dwn{
+    padding: 0.4rem 0.4rem;
+}
+
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+.row > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.row > div > div{
+    font-size: smaller;
+}
+.form-group{
+    margin-bottom: 6px;
+}
+.division_center h2{
+    position: absolute;
+    Top:35px;
+    left:30px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fdb924;
+}
+.submit_btn2 {
+    text-align: center;
+    background-color: #fdb924;
+    color: white;
+    padding: 0.4rem 0.4rem;
+    border-radius:5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .cre{
+  height:80vh;
+  overflow-y:scroll;
+}
+
+/* second */
